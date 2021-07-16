@@ -37,11 +37,26 @@
       <option name="project" value="LOCAL" />
       <updated>1626458395550</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added yml">
+      <created>1626458964570</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626458964570</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added yml">
+      <created>1626459024591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626459024592</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new pip added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new pip added" />
+    <MESSAGE value="added yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added yml" />
   </component>
 </project>
