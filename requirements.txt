@@ -1,7 +1,9 @@
 
 Django
+setuptools wheel
+minepy
 python-decouple
-psycopg2
+psycopg2-binary
 gunicorn
 gevent --pre
 auto-py-to-exe
