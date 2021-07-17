@@ -1,9 +1,0 @@
-
-Django
--U setuptools
-minepy
-python-decouple
-psycopg2-binary
-gunicorn
-gevent --pre
-auto-py-to-exe
