@@ -1,11 +1,1 @@
-appdirs
-asgiref
-distlib
-Django
-filelock
-pytz
-six
-sqlparse
-python-decouple
-psycopg2-binary
-gunicorn
+Cactus==3.3.3
