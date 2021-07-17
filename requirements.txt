@@ -1,6 +1,6 @@
 
 Django
-setuptools wheel
+-U setuptools
 minepy
 python-decouple
 psycopg2-binary
