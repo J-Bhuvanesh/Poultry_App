@@ -3,3 +3,5 @@ Django
 python-decouple
 psycopg2
 gunicorn
+gevent --pre
+auto-py-to-exe
