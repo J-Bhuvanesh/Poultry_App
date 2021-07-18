@@ -79,17 +79,13 @@ WSGI_APPLICATION = 'Poultry.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-        'HOST': config('db_host'),
-        'NAME': config('db_name'),
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'USER': config('db_user'),
-        'PASSWORD': config('db_pass'),
-        'OPTIONS': {
-            # 'autocommit': True,
-        },
-    }
-}
+"default": {
+    "ENGINE": "djongo",
+    "CLIENT": {
+        "host":"mongodb+srv://poultry:poultry@cluster0.gdeon.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+
+    },
+}}
 
 
 # Password validation

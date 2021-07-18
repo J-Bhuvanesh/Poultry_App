@@ -8,4 +8,6 @@ six==1.16.0
 sqlparse==0.4.1
 virtualenv==20.4.7
 python-decouple
-psycopg2
+dnspython==2.1.0
+pymongo==3.12.0
+
