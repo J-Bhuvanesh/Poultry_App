@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-fbj#g=)_m(9+c7=i3x@b4(t0m4awz^ispp7*psh!)50$r5oz(*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,13 +79,17 @@ WSGI_APPLICATION = 'Poultry.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-"default": {
-    "ENGINE": "djongo",
-    "CLIENT": {
-        "host":"mongodb+srv://poultry:poultry@cluster0.gdeon.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-
-    },
-}}
+        'default': {
+        'HOST': config('db_host'),
+        'NAME': config('db_name'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': config('db_user'),
+        'PASSWORD': config('db_pass'),
+        'OPTIONS': {
+            # 'autocommit': True,
+        },
+    }
+}
 
 
 # Password validation
@@ -124,7 +128,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+import  os
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
